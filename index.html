@@ -143,8 +143,13 @@
           <p class="tag">Podcast</p>
           <h2>Falas do Corpo</h2>
           <p>Episódios curtos que colocam a fisiologia humana em linguagem simples, com roteiro validado por especialistas antes de ir ao ar.</p>
+          <!-- Para trocar o episódio em destaque: copie o ID do link do episódio no Spotify (open.spotify.com/episode/<ID>) para o src e ajuste o title -->
+          <div class="episode">
+            <h3 class="label label--peach">Episódio mais recente</h3>
+            <iframe class="episode__player" title="Player do Spotify: Falas do Corpo — Hormônios Sexuais, Abuso e Identidade" src="https://open.spotify.com/embed/episode/4z3NnkRdAw1mNrOgxkKGnE?utm_source=generator&amp;theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
           <a class="btn btn--light" href="https://open.spotify.com/show/7LNqCR72bxQwGgIxuo63lD" target="_blank" rel="noopener">
-            Ouvir no Spotify
+            Todos os episódios
             <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
         </div>
@@ -165,6 +170,8 @@
           <ul class="chips">
             <li>Testosterona</li>
             <li>Hormônios sexuais femininos</li>
+            <li>Menopausa</li>
+            <li>Terapia hormonal</li>
             <li>A ressaca, explicada</li>
             <li>Quanto de água beber por dia</li>
             <li>Pressão arterial</li>
@@ -235,19 +242,27 @@
         </a>
       </div>
 
-      <!-- Para adicionar um post: copie um <li>, troque link, imagem (com width/height reais) e legenda; --r = largura ÷ altura da imagem -->
+      <!-- Para adicionar um post: copie um <li>, troque o link, a capa (recorte 4:5, ex. 640x800, em assets/) e a legenda -->
       <ul class="posts">
-        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DYxnA-ITQJa/" target="_blank" rel="noopener" style="--r: 0.461">
-          <img src="assets/post-ressaca.jpg" alt="" width="323" height="700" loading="lazy">
-          <span class="post__caption">O que é a ressaca para a fisiologia?</span>
+        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/Dd1VtuEzJPm/" target="_blank" rel="noopener">
+          <img src="assets/post-reposicao-hormonal.jpg" alt="" width="640" height="800" loading="lazy">
+          <span class="post__caption">Reposição hormonal: a principal deficiência</span>
         </a></li>
-        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DZX_z67TxpD/" target="_blank" rel="noopener" style="--r: 0.737">
-          <img src="assets/post-hormonios.jpg" alt="" width="516" height="700" loading="lazy">
-          <span class="post__caption">Você sabe quais são os hormônios sexuais femininos?</span>
+        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DayV-Q2TfvQ/" target="_blank" rel="noopener">
+          <img src="assets/post-terapia-hormonal.jpg" alt="" width="640" height="800" loading="lazy">
+          <span class="post__caption">Terapia hormonal: quando é indicada e quais os cuidados</span>
         </a></li>
-        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DZqOj3dzODC/" target="_blank" rel="noopener" style="--r: 0.809">
-          <img src="assets/post-testosterona.jpg" alt="" width="566" height="700" loading="lazy">
+        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DajEdiqzco5/" target="_blank" rel="noopener">
+          <img src="assets/post-menopausa.jpg" alt="" width="640" height="800" loading="lazy">
+          <span class="post__caption">Você sabe o que é a menopausa?</span>
+        </a></li>
+        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DZqOj3dzODC/" target="_blank" rel="noopener">
+          <img src="assets/post-testosterona.jpg" alt="" width="640" height="800" loading="lazy">
           <span class="post__caption">Você sabe o que é a testosterona?</span>
+        </a></li>
+        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DZX_z67TxpD/" target="_blank" rel="noopener">
+          <img src="assets/post-hormonios.jpg" alt="" width="640" height="800" loading="lazy">
+          <span class="post__caption">Você sabe quais são os hormônios sexuais femininos?</span>
         </a></li>
       </ul>
     </div>
