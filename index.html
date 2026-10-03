@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  document.documentElement.classList.add('js');
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
+  window.scrollTo(0, 0);
+</script>
+<title>Fisiologia para Todos · UFPB</title>
+<meta name="description" content="Projeto de extensão da UFPB que traduz fisiologia humana e saúde em conteúdo acessível: podcast, vídeos e posts para combater a desinformação em saúde.">
+<meta name="theme-color" content="#541c1c">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fisiologia para Todos · UFPB">
+<meta property="og:title" content="Fisiologia para Todos · UFPB">
+<meta property="og:description" content="Podcast, vídeos e posts sobre fisiologia humana e saúde, direto da UFPB para o seu feed.">
+<meta property="og:locale" content="pt_BR">
+<!-- TODO: adicionar og:image (1200x630) com a arte do perfil quando o arquivo estiver disponível -->
+
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:opsz,wght@9..40,400..600&family=Instrument+Serif:ital@1&display=swap">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Principal">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="" width="44" height="44">
+      <span>Fisiologia para Todos</span>
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+    </button>
+    <div class="nav__menu" id="menu">
+      <ul class="nav__links">
+        <li><a href="#sobre">O projeto</a></li>
+        <li><a href="#podcast">Podcast</a></li>
+        <li><a href="#aulas">Aulas</a></li>
+        <li><a href="#instagram">Instagram</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a class="btn btn--light" href="https://www.instagram.com/ufpbfisiologia/" target="_blank" rel="noopener">
+        Siga @ufpbfisiologia
+        <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="top">
+    <p class="hero__watermark" aria-hidden="true">Fisiologia<br>para todos</p>
+
+    <div class="hero__body container">
+      <div class="hero__text reveal">
+        <p class="pill"><span class="pill__dot" aria-hidden="true"></span>Projeto de extensão · UFPB</p>
+        <h1>O corpo humano, explicado com <em>ciência de verdade.</em></h1>
+        <p class="hero__sub">Podcast, vídeos e posts sobre fisiologia humana e saúde, direto da UFPB para o seu feed.</p>
+        <div class="actions">
+          <a class="btn btn--light" href="https://open.spotify.com/show/7LNqCR72bxQwGgIxuo63lD" target="_blank" rel="noopener">
+            Ouvir o Falas do Corpo
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <a class="btn btn--ghost-light" href="#sobre">
+            Conhecer o projeto
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <figure class="photo-card">
+          <img src="assets/equipe.jpg" alt="Equipe do projeto Fisiologia para Todos em frente a um quadro verde" width="751" height="565">
+        </figure>
+        <a class="stamp" href="#podcast">
+          <span class="stamp__title">Falas do<br>Corpo</span>
+          <span class="stamp__sub">Podcast</span>
+        </a>
+        <div class="badge">
+          <img src="assets/logo.jpg" alt="" width="52" height="52">
+          <p><strong>Feito por quem estuda o corpo</strong><span>Estudantes e professores da UFPB</span></p>
+        </div>
+      </div>
+    </div>
+
+    <dl class="facts container reveal">
+      <div><dt>Podcast</dt><dd>Falas do Corpo, no Spotify</dd></div>
+      <div><dt>Aulas</dt><dd>Vídeos de 11 a 15 min no YouTube</dd></div>
+      <div><dt>Roteiros</dt><dd>Validados por especialistas</dd></div>
+      <div><dt>Extensão</dt><dd>PROBEX 2025–2026 · PROEX/UFPB</dd></div>
+    </dl>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="split reveal">
+        <p class="eyebrow"><span class="eyebrow__num">01</span><span class="eyebrow__line" aria-hidden="true"></span>O projeto</p>
+        <h2 class="h2">Transformamos a fisiologia em algo <em>simples, acessível e útil</em>.</h2>
+      </div>
+
+      <ul class="pillars">
+        <li class="pillar reveal">
+          <span class="pillar__num" aria-hidden="true">01</span>
+          <h3>Ciência acessível</h3>
+          <p>Um projeto de extensão da UFPB que traduz a fisiologia humana para uma linguagem simples, sem perder o rigor.</p>
+        </li>
+        <li class="pillar reveal">
+          <span class="pillar__num" aria-hidden="true">02</span>
+          <h3>Conteúdo em todo lugar</h3>
+          <p>Podcasts educativos, materiais gratuitos, ações de saúde e conteúdo digital, feitos por estudantes e professores.</p>
+        </li>
+        <li class="pillar reveal">
+          <span class="pillar__num" aria-hidden="true">03</span>
+          <h3>Saúde com autonomia</h3>
+          <p>Ciência e cuidado lado a lado, para promover educação, prevenção e autonomia em saúde.</p>
+        </li>
+      </ul>
+
+      <div class="split quem reveal">
+        <h3 class="label">Quem somos</h3>
+        <p>Estudantes de graduação, professores e egressos da pós-graduação em Ciências Fisiológicas da UFPB, unidos pela vontade de ensinar fisiologia de um jeito simples.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="podcast" id="podcast">
+    <div class="container">
+      <div class="podcast__card reveal">
+        <div class="podcast__text">
+          <p class="tag">Podcast</p>
+          <h2>Falas do Corpo</h2>
+          <p>Episódios curtos que colocam a fisiologia humana em linguagem simples, com roteiro validado por especialistas antes de ir ao ar.</p>
+          <a class="btn btn--light" href="https://open.spotify.com/show/7LNqCR72bxQwGgIxuo63lD" target="_blank" rel="noopener">
+            Ouvir no Spotify
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+        <div class="podcast__side">
+          <div class="wave" aria-hidden="true">
+            <span style="--h:12%"></span><span style="--h:78%"></span><span style="--h:26%"></span><span style="--h:26%"></span>
+            <span style="--h:71%"></span><span style="--h:79%"></span><span style="--h:33%"></span><span style="--h:44%"></span>
+            <span style="--h:41%"></span><span style="--h:19%"></span><span style="--h:95%"></span><span style="--h:53%"></span>
+            <span style="--h:37%"></span><span style="--h:32%"></span><span style="--h:61%"></span><span style="--h:46%"></span>
+            <span style="--h:84%"></span><span style="--h:15%"></span><span style="--h:16%"></span><span style="--h:78%"></span>
+            <span style="--h:53%"></span><span style="--h:59%"></span><span style="--h:43%"></span><span style="--h:35%"></span>
+            <span style="--h:43%"></span><span style="--h:96%"></span><span style="--h:27%"></span><span style="--h:46%"></span>
+            <span style="--h:34%"></span><span style="--h:38%"></span><span style="--h:74%"></span><span style="--h:79%"></span>
+            <span style="--h:22%"></span><span style="--h:16%"></span><span style="--h:74%"></span><span style="--h:20%"></span>
+            <span style="--h:79%"></span><span style="--h:36%"></span><span style="--h:29%"></span><span style="--h:61%"></span>
+          </div>
+          <h3 class="label label--peach">Temas que já exploramos</h3>
+          <ul class="chips">
+            <li>Testosterona</li>
+            <li>Hormônios sexuais femininos</li>
+            <li>A ressaca, explicada</li>
+            <li>Quanto de água beber por dia</li>
+            <li>Pressão arterial</li>
+            <li>Eletrocardiograma</li>
+            <li>Espirometria</li>
+            <li>Controle da glicemia</li>
+            <li>Sono e humor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="aulas" id="aulas">
+    <div class="container stack">
+      <div class="section-head">
+        <div class="section-head__title reveal">
+          <p class="eyebrow"><span class="eyebrow__num">02</span><span class="eyebrow__line" aria-hidden="true"></span>Aulas no YouTube</p>
+          <h2 class="h2">Fisiologia <em>na prática,</em> em aulas de 11 a 15 minutos.</h2>
+        </div>
+        <a class="btn btn--ghost-dark section-head__cta" href="https://www.youtube.com/@fisiologiaufpb" target="_blank" rel="noopener">
+          Ver o canal
+          <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+
+      <!-- Links apontam para o canal (sem ID de vídeo individual disponível ainda) -->
+      <ul class="lessons">
+        <li class="reveal"><a class="lesson" href="https://www.youtube.com/@fisiologiaufpb" target="_blank" rel="noopener">
+          <span class="lesson__cover" style="--tone: var(--bordo)"><span class="lesson__tag">Aula</span><svg class="lesson__play" width="56" height="56" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M19 15l16 9-16 9V15z"/></svg></span>
+          <span class="lesson__title">Fisiologia Sensorial</span>
+          <span class="lesson__meta">YouTube · 11–15 min</span>
+        </a></li>
+        <li class="reveal"><a class="lesson" href="https://www.youtube.com/@fisiologiaufpb" target="_blank" rel="noopener">
+          <span class="lesson__cover" style="--tone: var(--deep)"><span class="lesson__tag">Aula</span><svg class="lesson__play" width="56" height="56" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M19 15l16 9-16 9V15z"/></svg></span>
+          <span class="lesson__title">Medida da Pressão Arterial</span>
+          <span class="lesson__meta">YouTube · 11–15 min</span>
+        </a></li>
+        <li class="reveal"><a class="lesson" href="https://www.youtube.com/@fisiologiaufpb" target="_blank" rel="noopener">
+          <span class="lesson__cover" style="--tone: var(--wine)"><span class="lesson__tag">Aula</span><svg class="lesson__play" width="56" height="56" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M19 15l16 9-16 9V15z"/></svg></span>
+          <span class="lesson__title">Eletrocardiograma</span>
+          <span class="lesson__meta">YouTube · 11–15 min</span>
+        </a></li>
+        <li class="reveal"><a class="lesson" href="https://www.youtube.com/@fisiologiaufpb" target="_blank" rel="noopener">
+          <span class="lesson__cover" style="--tone: var(--bordo)"><span class="lesson__tag">Aula</span><svg class="lesson__play" width="56" height="56" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M19 15l16 9-16 9V15z"/></svg></span>
+          <span class="lesson__title">Espirometria</span>
+          <span class="lesson__meta">YouTube · 11–15 min</span>
+        </a></li>
+        <li class="reveal"><a class="lesson" href="https://www.youtube.com/@fisiologiaufpb" target="_blank" rel="noopener">
+          <span class="lesson__cover" style="--tone: var(--deep)"><span class="lesson__tag">Aula</span><svg class="lesson__play" width="56" height="56" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M19 15l16 9-16 9V15z"/></svg></span>
+          <span class="lesson__title">Controle da Glicemia</span>
+          <span class="lesson__meta">YouTube · 11–15 min</span>
+        </a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="instagram" id="instagram">
+    <div class="container stack">
+      <div class="section-head">
+        <div class="section-head__title reveal">
+          <p class="eyebrow eyebrow--peach"><span class="eyebrow__num">03</span><span class="eyebrow__line" aria-hidden="true"></span>No Instagram</p>
+          <h2 class="h2">Ciência no seu feed,<br><em>toda semana.</em></h2>
+        </div>
+        <a class="btn btn--light section-head__cta" href="https://www.instagram.com/ufpbfisiologia/" target="_blank" rel="noopener">
+          Seguir no Instagram
+          <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+
+      <!-- Para adicionar um post: copie um <li>, troque link, imagem (com width/height reais) e legenda; --r = largura ÷ altura da imagem -->
+      <ul class="posts">
+        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DYxnA-ITQJa/" target="_blank" rel="noopener" style="--r: 0.461">
+          <img src="assets/post-ressaca.jpg" alt="" width="323" height="700" loading="lazy">
+          <span class="post__caption">O que é a ressaca para a fisiologia?</span>
+        </a></li>
+        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DZX_z67TxpD/" target="_blank" rel="noopener" style="--r: 0.737">
+          <img src="assets/post-hormonios.jpg" alt="" width="516" height="700" loading="lazy">
+          <span class="post__caption">Você sabe quais são os hormônios sexuais femininos?</span>
+        </a></li>
+        <li class="reveal"><a class="post" href="https://www.instagram.com/reel/DZqOj3dzODC/" target="_blank" rel="noopener" style="--r: 0.809">
+          <img src="assets/post-testosterona.jpg" alt="" width="566" height="700" loading="lazy">
+          <span class="post__caption">Você sabe o que é a testosterona?</span>
+        </a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="cta reveal">
+        <h2>Tem uma pergunta sobre o <em>seu corpo?</em></h2>
+        <p>Manda pra gente no Instagram. Sua dúvida pode virar o próximo episódio do podcast.</p>
+        <a class="btn btn--light" href="https://www.instagram.com/ufpbfisiologia/" target="_blank" rel="noopener">
+          Sugerir um tema
+          <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+
+      <ul class="channels">
+        <li class="reveal"><a class="channel" href="https://www.instagram.com/ufpbfisiologia/" target="_blank" rel="noopener">
+          <span class="channel__top"><span class="channel__name">Instagram</span><svg class="channel__icon" width="22" height="22" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14L14 6M7.5 6H14v6.5"/></svg></span>
+          <span class="channel__desc">@ufpbfisiologia, reels e posts toda semana</span>
+        </a></li>
+        <li class="reveal"><a class="channel" href="https://www.tiktok.com/@ufpbfisiologia" target="_blank" rel="noopener">
+          <span class="channel__top"><span class="channel__name">TikTok</span><svg class="channel__icon" width="22" height="22" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14L14 6M7.5 6H14v6.5"/></svg></span>
+          <span class="channel__desc">Vídeos curtos sobre o corpo humano</span>
+        </a></li>
+        <li class="reveal"><a class="channel" href="https://www.youtube.com/@fisiologiaufpb" target="_blank" rel="noopener">
+          <span class="channel__top"><span class="channel__name">YouTube</span><svg class="channel__icon" width="22" height="22" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14L14 6M7.5 6H14v6.5"/></svg></span>
+          <span class="channel__desc">Aulas completas de fisiologia na prática</span>
+        </a></li>
+        <li class="reveal"><a class="channel" href="https://open.spotify.com/show/7LNqCR72bxQwGgIxuo63lD" target="_blank" rel="noopener">
+          <span class="channel__top"><span class="channel__name">Spotify</span><svg class="channel__icon" width="22" height="22" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14L14 6M7.5 6H14v6.5"/></svg></span>
+          <span class="channel__desc">Falas do Corpo, nosso podcast</span>
+        </a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <div class="brand">
+        <img src="assets/logo.jpg" alt="" width="40" height="40">
+        <span>Fisiologia para Todos</span>
+      </div>
+      <div class="footer__credits">
+        <p>Projeto de Extensão PROEX/UFPB · edital PROBEX 2025–2026</p>
+        <p>Departamento de Ciências Biomédicas · Centro de Ciências da Saúde · UFPB</p>
+        <p>&copy; <span id="year">2026</span> Fisiologia para Todos</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
